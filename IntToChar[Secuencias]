@@ -1,0 +1,35 @@
+Secuencias 2.1.22 : GRABAR UN NUMERO desde adelante hacia atras y convertilo a caracter -> 5320
+// salida: "5" "3" "2" "0"
+Grabar entero desde adelante hacia atras sin usar variables aux
+
+ Func getN(x:entero):entero
+ // [NRO] [la cantidad de ceros que pondremos sera de N-1]
+  Segun x hacer// 5320
+     =1: getN:=1000
+     =2: getN:=100
+     =3: getN:=10
+     =4: getN:=1
+  Fin segun
+ Ff
+
+Grabarint(N) Es
+  Ambiente
+  N1:entero
+  Proceso
+  para i:=1 hasta 4 hacer // ACA SE PONE LA CANT DE CFIRAS DEL NRO
+    N1:=[(N)DIV(GetN(i)] //
+    Si i = 1 entonces
+      s:=IntToChar(N1)
+    Sino 
+      N1:=N1 MOD 10
+      s:=IntToChar(N1)
+    Fsi
+    Grabar(sec3,s)
+Fp
+
+OBTENER UN NUMERO DESDE ATRAS HACIA DELANTE Y SI QUERES CONVERTIS A CARACTER
+
+Mientras N2 <> 0 Hacer // 44822
+  N1:=N1+(N2 MOD 10)
+  N2:=N2 DIV 10
+Fin Mientras // 2 2 8 4 4 lo manipulas segun la iteracion.
